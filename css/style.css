@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(20, 50%, 98%);
+  margin: 0;
+  padding: 0 25px 0 25px;
+}
+body .container main {
+  font-family: "Red Hat Text", sans-serif;
+}
+body .container main h1 {
+  font-weight: 700;
+  color: hsl(14, 65%, 9%);
+}
+body .container main .desserts .dessert {
+  margin-bottom: 20px;
+}
+body .container main .desserts .dessert .dessert-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+body .container main .desserts .dessert .dessert-info {
+  margin-top: 15px;
+}
+body .container main .desserts .dessert .dessert-info h3 {
+  margin: 0;
+  color: hsl(7, 20%, 60%);
+  font-size: 14px;
+  font-weight: 400;
+}
+body .container main .desserts .dessert .dessert-info h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+body .container main .desserts .dessert .dessert-info .name {
+  color: hsl(14, 65%, 9%);
+}
+body .container main .desserts .dessert .dessert-info .price {
+  color: hsl(14, 86%, 42%);
+}
+body .container main .desserts .dessert .add-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  border: 0.5px solid hsl(12, 20%, 44%);
+  border-radius: 20px;
+  padding: 10px 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 600;
+  color: hsl(14, 65%, 9%);
+  background-color: hsl(20, 50%, 98%);
+}
+body .container main .desserts .dessert .add-btn img {
+  margin-right: 5px;
+}
+body .container main .desserts .dessert .add-btn:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
