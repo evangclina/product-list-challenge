@@ -15,6 +15,7 @@ async function buildDesserts(){
     dessert.forEach((des, i) => {
         const div = document.createElement("div")
         div.classList.add(`dessert`)
+        div.classList.add(`dessert-${i}`)
         div.innerHTML= `
         <div class="dessert-img">
             <img src="${des.image.mobile}" alt="Photo of ${des.name}">
@@ -24,12 +25,25 @@ async function buildDesserts(){
             <h2 class="name">${des.name}</h2>
             <h2 class="price">$${des.price}</h2>
         </div>
-        <button class="add-btn"><img src="./assets/images/icon-add-to-cart.svg" alt="Shopping cart icon">Add to Cart</button>`
-    
+        <div>
+            <button class="add-btn" onclick="clickBtn(${i})"><img src="./assets/images/icon-add-to-cart.svg" alt="Shopping cart icon">Add to Cart</button>
+            <div class="new-btn">
+                <img src="./assets/images/icon-decrement-quantity.svg" alt="decrement icon">
+                <p  class="counter">1</p>
+                <img src="./assets/images/icon-increment-quantity.svg" alt="increment icon">
+            </div>
+        </div>`
         dessertContainer.appendChild(div)
     })
 }
 buildDesserts()
+
+
+function clickBtn(id){
+    document.querySelector(`.dessert-${id} .add-btn`).style.display = "none"
+
+    const counter = 1;
+}
 
 
 //click button 

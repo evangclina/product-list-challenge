@@ -15,6 +15,7 @@ body .container main h1 {
   color: hsl(14, 65%, 9%);
 }
 body .container main .desserts .dessert {
+  position: relative;
   margin-bottom: 20px;
 }
 body .container main .desserts .dessert .dessert-img img {
@@ -44,6 +45,7 @@ body .container main .desserts .dessert .dessert-info .price {
 body .container main .desserts .dessert .add-btn {
   position: absolute;
   left: 50%;
+  top: 189px;
   transform: translateX(-50%);
   width: 150px;
   border: 0.5px solid hsl(12, 20%, 44%);
@@ -56,12 +58,58 @@ body .container main .desserts .dessert .add-btn {
   font-weight: 600;
   color: hsl(14, 65%, 9%);
   background-color: hsl(20, 50%, 98%);
+  z-index: 2;
 }
 body .container main .desserts .dessert .add-btn img {
   margin-right: 5px;
 }
 body .container main .desserts .dessert .add-btn:hover {
   cursor: pointer;
+}
+body .container main .desserts .dessert .new-btn {
+  position: absolute;
+  left: 50%;
+  top: 189px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: hsl(14, 86%, 42%);
+  width: 150px;
+  border-radius: 20px;
+  z-index: 0;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 600;
+  color: hsl(20, 50%, 98%);
+  border: 0 solid hsl(14, 86%, 42%);
+  border: none;
+}
+body .container main .desserts .dessert .new-btn img {
+  width: 16px;
+  height: 16px;
+  padding: 1px;
+  border: 1px solid hsl(20, 50%, 98%);
+  border-radius: 50%;
+}
+body .container main .desserts .dessert .new-btn p {
+  margin: 0;
+}
+body .container main .cart {
+  background-color: white;
+  padding: 20px;
+}
+body .container main .cart h2 {
+  margin: 0;
+}
+body .container main .cart .cart-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .container main .cart .cart-content p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

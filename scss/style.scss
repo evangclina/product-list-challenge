@@ -16,6 +16,7 @@ body{
             }
             .desserts{
                 .dessert{
+                    position: relative; 
                     margin-bottom: 20px;
                     .dessert-img{
                         img{
@@ -48,10 +49,8 @@ body{
                     }
                     .add-btn{
                         position: absolute;
-                        left: 50%; 
-                        // margin-bottom: 600px;
-                        // top: 30%;
-                        // top: 275px;
+                        left: 50%;
+                        top: 189px;
                         transform: translateX(-50%);
                         width: 150px;
                         border: .5px solid $rose500;
@@ -64,6 +63,7 @@ body{
                         font-weight: 600;
                         color: $rose900;
                         background-color: $rose50;
+                        z-index:2;
                         img{
                             margin-right: 5px;
                         }
@@ -71,21 +71,54 @@ body{
                             cursor: pointer;
                         }
                     }
-                    // .select{
-                    //     background-color: $red;
-                    // }
+                    .new-btn{
+                        position: absolute;
+                        left: 50%;
+                        top: 189px;
+                        transform: translateX(-50%);
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 10px;
+                        background-color: $red;
+                        width: 150px;
+                        border-radius:20px;
+                        z-index: 0;
+                        font-family: $font;
+                        font-weight: 600;
+                        color: $rose50;
+                        border: 0 solid $red;
+                        border: none;
+                        img{
+                            width: 16px;
+                            height: 16px;
+                            padding: 1px;
+                            border: 1px solid $rose50;
+                            border-radius: 50%;
+                        }
+                        p{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .cart{
+                h2{
+                    margin: 0;
+                }
+                background-color: white;
+                padding: 20px;
+                .cart-content{
+                    p{
+                        margin: 0;
+                    }
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
                 }
             }
         }
     }
 }
-
-// <div class="dessert-img">
-//     <img src="${des.image.mobile}" alt="Photo of ${des.name}">
-// /div>
-// <div class="dessert-info">
-//     <h3>${des.category}</h3>
-//     <h2>${des.name}</h2>
-//     <h2>$${des.price}</h2>
-// </div>
-// <button><img src="./assets/images/icon-add-to-cart.svg" alt="Shopping cart icon">Add to Cart</button>`
